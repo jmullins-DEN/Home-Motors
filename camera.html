@@ -623,7 +623,7 @@ function fetchAndMerge(onDone) {
           newEvts.push(o);
         }
         saveStored(newEvts);
-renderWithDateFilter(newEvts);
+        renderWithDateFilter(newEvts);
         st.textContent = '✓ GitHub sync: up to date (' + newEvts.length + ' total events)';
       } catch(e) {
         st.textContent = 'Error reading GitHub file: ' + e.message;
